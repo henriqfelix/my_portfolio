@@ -159,6 +159,51 @@ button {
   fill: var(--first-color);
 }
 
+/*==== HOME ====*/
+h1.home_tittle {
+  font-weight: var(--font-regular);
+  font-size: var(--h2-font-size);
+}
+
+h1.home_tittle span {
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--h1-font-size);
+}
+
+h1.home_tittle,
+.home__description {
+  color: #fff;
+}
+
+.home__description {
+  font-weight: var(--font-light);
+}
+
+.home {
+  background: linear-gradient(
+    170deg,
+    hsl(225, 59%, 11%) 10%,
+    hsl(225, 59%, 11%) 40%
+  );
+  padding-bottom: 0;
+}
+
+.image__container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.image__container img {
+  width: 70%;
+  animation: float 4s alternate infinite ease-in-out;
+}
+
+/*==== MEDIA QUERIES ====*/
 @media screen and (max-width: 1023px) {
   .nav__logo {
     justify-content: center;
@@ -197,5 +242,14 @@ button {
 
   .nav__link span {
     display: none;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-5%);
   }
 }
