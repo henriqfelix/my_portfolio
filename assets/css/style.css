@@ -102,14 +102,19 @@ img {
 
 /*==== REUSABLE CSS CLASSES ====*/
 .section {
-  padding: 2rem 0 4rem;
+  padding: 2rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .section__title {
   font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-2);
 }
 
-.section__subtittle {
+.section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
@@ -122,8 +127,6 @@ img {
 /*==== LAYOUT ====*/
 .container {
   max-width: 1024px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
 }
 
 .grid {
@@ -140,6 +143,7 @@ img {
   background-color: transparent;
   z-index: var(--z-fixed);
   transition: 0.4s;
+  padding: 1rem 2rem;
 }
 
 .nav {
@@ -252,10 +256,14 @@ main {
   color: var(--container-color);
 }
 
+.home__scroll:hover {
+  transform: translateY(0.25rem);
+}
+
 .home__scroll {
   position: absolute;
   right: 1.5rem;
-  top: 11rem;
+  top: 11.5rem;
   height: 2rem;
   width: 2rem;
   background-color: var(--first-color);
@@ -263,6 +271,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s;
+  box-shadow: 0 8px 24px hsla(230, 65%, 45%, 0.15);
+  /* display: none; */
 }
 
 .home_tittle {
@@ -282,15 +293,12 @@ h1.home_tittle,
 }
 
 .home__description {
+  margin-top: 0.5rem;
   font-weight: var(--font-light);
 }
 
 .home {
-  background: linear-gradient(
-    170deg,
-    hsl(225, 59%, 11%) 10%,
-    hsl(225, 59%, 11%) 40%
-  );
+  background: linear-gradient(170deg, hsl(250, 69%, 5%), hsl(250, 69%, 20%));
   padding-bottom: 0;
 }
 
@@ -308,6 +316,30 @@ h1.home_tittle,
   animation: float 4s alternate infinite ease-in-out;
 }
 
+/*==== BUTTONS ====*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button i {
+  margin: 0 0.5rem;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/*==== ABOUT ME ====*/
 @keyframes float {
   0% {
     transform: translateY(0%);
