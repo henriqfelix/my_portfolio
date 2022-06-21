@@ -2,16 +2,16 @@
   --header-height: 3.5rem;
 
   /*==== COLORS ====*/
-  --first-color: hsl(200, 85%, 50%);
-  --first-color-alt: hsl(200, 85%, 40%);
-  --first-color-light: hsl(200, 85%, 60%);
-  --first-color-lighten: hsl(200, 100%, 97%);
-  --second-color: hsl(356, 90%, 65%);
-  --title-color: hsl(256, 25%, 20%);
-  --text-color: hsl(256, 15%, 50%);
-  --text-color-light: hsl(256, 15%, 75%);
-  --border-color: hsl(256, 98%, 98%);
-  --body-color: #fff;
+  --hue-color: 250;
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fff;
 
   /*==== TYPOGRAPHY ====*/
@@ -159,16 +159,30 @@ button {
   fill: var(--first-color);
 }
 
+/*==== CHANGE BACKGROUND HEADER ====*/
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 8px 24px hsla(230, 65%, 45%, 0.15);
+}
+
+.scroll-header .nav__logo svg {
+  fill: var(--first-color);
+}
+
+main {
+  height: 3000px;
+}
+
 /*==== HOME ====*/
-h1.home_tittle {
+.home_tittle {
   font-weight: var(--font-regular);
   font-size: var(--h2-font-size);
 }
 
-h1.home_tittle span {
+.home_tittle span {
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
-  font-size: var(--h1-font-size);
+  font-size: var(--biggest-font-size);
 }
 
 h1.home_tittle,
@@ -189,7 +203,7 @@ h1.home_tittle,
   padding-bottom: 0;
 }
 
-.image__container {
+.home__image {
   width: 100%;
   height: auto;
   display: flex;
@@ -198,7 +212,7 @@ h1.home_tittle,
   margin: 2rem 0;
 }
 
-.image__container img {
+.home__image img {
   width: 70%;
   animation: float 4s alternate infinite ease-in-out;
 }
