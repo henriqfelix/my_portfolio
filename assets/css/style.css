@@ -126,7 +126,7 @@ img {
 
 /*==== LAYOUT ====*/
 .container {
-  max-width: 1024px;
+  max-width: 1023px;
 }
 
 .grid {
@@ -221,7 +221,7 @@ img {
 }
 
 main {
-  height: 3000px;
+  height: 100%;
 }
 
 /*==== HOME ====*/
@@ -442,6 +442,64 @@ h1.home_tittle,
 
 .skills__open .skills__arow {
   transform: rotate(180deg);
+}
+
+/*==== PROJECTS ====*/
+.project__container {
+  overflow: initial;
+}
+
+.project__content {
+  padding: 0 1.5rem;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project__img {
+  width: 256px;
+  border-radius: 0.5rem;
+}
+
+.project__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.project__description {
+  margin-bottom: var(--mb-0-75);
+}
+
+.project__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+.project-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: start;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.swiper-slide .project__description {
+  padding: 1rem 1rem;
+}
+.swiper-slide .project__title {
+  margin-bottom: 0.5rem;
+}
+.swiper-slide .card-link {
+  text-align: center;
 }
 
 /*==== ABOUT ME ====*/

@@ -22,6 +22,9 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+
+    <!-- SWIPPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   </head>
 
   <body>
@@ -259,13 +262,125 @@
           </div>
         </div>
       </section>
+
+      <!-- PROJECTS -->
+      <section class="project section" id="project">
+        <h2 class="section__title">Projetos</h2>
+        <span class="section__subtitle">Projetos recentes</span>
+
+        <div class="project__container container project-swiper">
+          <div class="swiper-wrapper">
+            <!-- PROJECT 1 -->
+            <div class="project__content grid swiper-slide">
+              <img
+                src="assets/img/project/snake.jpeg"
+                alt="snake game project"
+                class="project__img"
+              />
+
+              <div class="project__data">
+                <h3 class="project__title">Jogo Snake</h3>
+                <p class="project__description">
+                  O famoso jogo da cobrinha, versão compatível apenas para
+                  desktop.
+                </p>
+                <a
+                  href="https://henriqfelix.github.io/snake-game/"
+                  target="_blank"
+                  class="button button--flex button--small project__button"
+                >
+                  Jogar<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="project__content grid swiper-slide">
+              <img
+                src="assets/img/project/league_of_legends.png"
+                alt="league of legends login screen project"
+                class="project__img"
+              />
+
+              <div class="project__data">
+                <h3 class="project__title">LoL Login Screen</h3>
+                <p class="project__description">
+                  Este projeto é um clone da tela de login do jogo League of
+                  Legends.
+                </p>
+                <a
+                  href=""
+                  target="_blank"
+                  class="button button--flex button--small project__button"
+                >
+                  Conferir<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="project__content grid swiper-slide">
+              <img
+                src="assets/img/project/form.png"
+                alt="form pwith validations project"
+                class="project__img"
+              />
+
+              <div class="project__data">
+                <h3 class="project__title">Formulário</h3>
+                <p class="project__description">
+                  Este projeto se trata de um formulário com validações.
+                </p>
+                <a
+                  href=""
+                  target="_blank"
+                  class="button button--flex button--small project__button"
+                >
+                  Conferir<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- PROJECT 4 -->
+            <div class="project__content grid swiper-slide">
+              <img
+                src="assets/img/project/github.png"
+                alt="github projects"
+                class="project__img"
+              />
+
+              <div class="project__data">
+                <h3 class="project__title">Meu Github</h3>
+                <p class="project__description">
+                  Você pode conferir esses e mais projetos no meu perfil do
+                  Github!
+                </p>
+                <a
+                  href=""
+                  target="_blank"
+                  class="button button--flex button--small project__button"
+                >
+                  Conferir<i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper_project-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper_project-icon"></i>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </main>
 
-    <!-- FONT AWESOME -->
-    <script
-      src="https://kit.fontawesome.com/b7ec0e5ac0.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- SWIPER -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
