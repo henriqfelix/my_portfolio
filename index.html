@@ -16,6 +16,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- ICONSCOUT -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
   </head>
 
   <body>
@@ -39,28 +45,28 @@
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#about_me" class="nav__link">
-                <i class="fa-solid fa-user"></i>
+                <i class="uil uil-user"></i>
                 <span>About me</span>
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#technologies" class="nav__link">
-                <i class="fa-solid fa-laptop"></i>
+                <i class="uil uil-laptop"></i>
                 <span>Technologies</span>
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#projects" class="nav__link">
-                <i class="fa-solid fa-code"></i>
+                <i class="uil uil-folder"></i>
                 <span>Projects</span>
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="fa-solid fa-envelope"></i>
+                <i class="uil uil-envelope"></i>
                 <span>Contact</span>
               </a>
             </li>
@@ -72,9 +78,9 @@
     <!-- MAIN -->
     <main class="main">
       <!-- HOME -->
-      <section class="home section">
+      <section class="home section" id="home">
         <div class="home__container container grid">
-          <div class="home__data">
+          <div class="home__content">
             <h1 class="home_tittle">
               Olá! Me chamo<br />
               <span>Henrique Félix</span>
@@ -83,6 +89,30 @@
               É um prazer recebê-lo(a) aqui :D<br />
               Deslize para me conhecer melhor!
             </p>
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/henriqfelix/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+
+              <a
+                href="https://github.com/henriqfelix"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+
+            <div class="home__scroll">
+              <a href="#about" class="home__scroll-button button--flex">
+                <i class="uil uil-angle-down home_scroll-arrow"></i>
+              </a>
+            </div>
+
             <div class="home__image">
               <img src="assets/img/henrique.png" alt="henrique's image" />
             </div>
