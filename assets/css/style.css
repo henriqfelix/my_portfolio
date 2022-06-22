@@ -589,6 +589,12 @@ h1.home_tittle,
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+.contact__button--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*==== ANIMATIONS ====*/
 @keyframes float {
   0% {
