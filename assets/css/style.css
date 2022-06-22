@@ -260,10 +260,6 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-.scroll-header .change-theme:hover {
-  color: var(--first-color-alt);
-}
-
 /*==== HOME ====*/
 .home__container {
   gap: 1rem;
