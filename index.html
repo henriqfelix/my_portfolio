@@ -47,34 +47,44 @@
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#about_me" class="nav__link">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
                 <i class="uil uil-user"></i>
-                <span>About me</span>
+                <span>Sobre mim</span>
               </a>
             </li>
 
             <li class="nav__item">
-              <a href="#technologies" class="nav__link">
+              <a href="#skills" class="nav__link">
                 <i class="uil uil-laptop"></i>
-                <span>Technologies</span>
+                <span>Tecnologias</span>
               </a>
             </li>
 
             <li class="nav__item">
-              <a href="#projects" class="nav__link">
+              <a href="#project" class="nav__link">
                 <i class="uil uil-folder"></i>
-                <span>Projects</span>
+                <span>Projetos</span>
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#contact" class="nav__link">
                 <i class="uil uil-envelope"></i>
-                <span>Contact</span>
+                <span>Contato</span>
               </a>
             </li>
           </ul>
         </div>
+
+        <!-- THEME CHANGE BUTTON <i class="uil uil-sun"></i> -->
+        <i class="uil uil-moon change-theme" id="theme-button"></i>
       </nav>
     </header>
 
@@ -168,8 +178,9 @@
                 <div>
                   <h1 class="skills__title">Desenvolvimento front end</h1>
                 </div>
-
-                <i class="uil uil-angle-down"></i>
+                <div class="skills__icon-bg">
+                  <i class="uil uil-angle-down skills__arow"></i>
+                </div>
               </div>
 
               <div class="skills__list grid">
@@ -223,8 +234,9 @@
                 <div>
                   <h1 class="skills__title">Design</h1>
                 </div>
-
-                <i class="uil uil-angle-down"></i>
+                <div class="skills__icon-bg">
+                  <i class="uil uil-angle-down skills__arow"></i>
+                </div>
               </div>
 
               <div class="skills__list grid">
@@ -376,7 +388,7 @@
       </section>
 
       <!-- CONTACT -->
-      <section class="contact section" id="section">
+      <section class="contact section" id="contact">
         <h2 class="section__title">Entre em contato</h2>
         <span class="section__subtitle"
           >Envie-me uma mensagem, sugestão ou pergunta :D</span
@@ -418,39 +430,42 @@
           </form>
         </div>
       </section>
-
-      <!-- CONTACT -->
-      <section class="footer">
-        <div class="footer__bg">
-          <div class="footer__container container grid">
-            <div>
-              <h1 class="footer__title">Henrique Félix</h1>
-              <span class="footer__subtitle"
-                >Front-end developer & designer</span
-              >
-            </div>
-
-            <div class="footer__socials">
-              <a
-                href="https://www.linkedin.com/in/henriqfelix/"
-                target="_blank"
-                class="footer__social"
-              >
-                <i class="uil uil-linkedin-alt"></i>
-              </a>
-              <a
-                href="https://github.com/henriqfelix"
-                target="_blank"
-                class="footer__social"
-              >
-                <i class="uil uil-github-alt"></i>
-              </a>
-            </div>
-          </div>
-          <p class="footer__copy">&#169; henriqfelix</p>
-        </div>
-      </section>
     </main>
+
+    <!-- FOOTER -->
+    <section class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Henrique Félix</h1>
+            <span class="footer__subtitle">Front-end developer & designer</span>
+          </div>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.linkedin.com/in/henriqfelix/"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a
+              href="https://github.com/henriqfelix"
+              target="_blank"
+              class="footer__social"
+            >
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+        </div>
+        <p class="footer__copy">&#169; henriqfelix</p>
+      </div>
+    </section>
+
+    <!-- SCROLL UP -->
+    <a href="#home" class="scrollup" id="scroll-up">
+      <i class="uil uil-angle-double-up scrollup__icon"></i>
+    </a>
 
     <!-- SWIPER -->
     <script src="assets/js/swiper-bundle.min.js"></script>
