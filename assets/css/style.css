@@ -2,7 +2,7 @@
   --header-height: 3.5rem;
 
   /*==== COLORS ====*/
-  --hue-color: 250;
+  --hue-color: 230;
 
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -338,7 +338,11 @@ h1.home_tittle,
 }
 
 .home {
-  background: linear-gradient(170deg, hsl(250, 69%, 5%), hsl(250, 69%, 20%));
+  background: linear-gradient(
+    170deg,
+    hsl(var(--hue-color), 69%, 5%),
+    hsl(var(--hue-color), 69%, 20%)
+  );
   padding-bottom: 0;
 }
 
