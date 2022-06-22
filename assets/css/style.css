@@ -308,10 +308,6 @@ body.dark-theme {
   /* display: none; */
 }
 
-.home__scroll:hover {
-  background-color: var(--first-color-alt);
-}
-
 .home_tittle {
   font-weight: var(--font-regular);
   font-size: var(--h2-font-size);
@@ -575,11 +571,6 @@ h1.home_tittle,
   cursor: pointer;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  background-color: var(--first-color-alt);
-}
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
@@ -720,7 +711,6 @@ h1.home_tittle,
 }
 
 .scrollup:hover {
-  background-color: var(--first-color-alt);
   transform: translateY(-0.25rem);
 }
 
