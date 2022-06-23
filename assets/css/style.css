@@ -739,6 +739,10 @@ h1.home_tittle,
   visibility: hidden;
 }
 
+.contact__content.success {
+  box-shadow: 0 8px 0px hsla(230, 100%, 45%, 0.8);
+}
+
 .contact__content.error {
   box-shadow: 0 8px 0px hsla(355, 100%, 35%, 0.8);
 }
