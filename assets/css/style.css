@@ -379,6 +379,7 @@ h1.home_tittle,
 .button--flex {
   display: inline-flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .button__icon {
@@ -725,10 +726,15 @@ h1.home_tittle,
 /*==== FORM VALIDATION ====*/
 .contact__content small {
   font-size: var(--smaller-font-size);
+  color: rgb(206, 64, 76);
   position: absolute;
   right: 0.5rem;
   bottom: 0.2rem;
   visibility: hidden;
+}
+
+.contact__content.error {
+  box-shadow: 0 8px 0px hsla(355, 100%, 35%, 0.8);
 }
 
 .contact__content.error small {
@@ -760,6 +766,11 @@ h1.home_tittle,
 /*==== SHOW SCROLL UP ====*/
 .show-scroll {
   bottom: 8rem;
+}
+
+.shake-horizontal {
+  -webkit-animation: shake-horizontal 0.8s both;
+  animation: shake-horizontal 0.8s both;
 }
 
 /*==== ANIMATIONS ====*/
