@@ -642,7 +642,8 @@ h1.home_tittle,
 .contact__content {
   background-color: var(--input-color);
   border-radius: 0.5rem;
-  padding: 0.75rem 1rem 0.25rem;
+  padding: 0.75rem 1rem 1rem;
+  position: relative;
 }
 
 .contact__label {
@@ -719,6 +720,19 @@ h1.home_tittle,
 
 .nav__link.active-link i {
   color: var(--body-color);
+}
+
+/*==== FORM VALIDATION ====*/
+.contact__content small {
+  font-size: var(--smaller-font-size);
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.2rem;
+  visibility: hidden;
+}
+
+.contact__content.error small {
+  visibility: visible;
 }
 
 /*==== SCROLL UP ====*/
@@ -946,7 +960,7 @@ h1.home_tittle,
 
 @media screen and (min-width: 1040px) {
   .home__container {
-    column-gap: 20rem;
+    column-gap: 16rem;
   }
 
   .project__content {

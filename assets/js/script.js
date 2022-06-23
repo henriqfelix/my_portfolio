@@ -69,7 +69,7 @@ function scrollActive() {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
     let sectionId = current.getAttribute("id");
-    console.log(sectionId);
+
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
         .querySelector(".nav__menu a[href*=" + sectionId + "]")
