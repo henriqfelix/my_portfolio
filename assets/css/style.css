@@ -380,6 +380,8 @@ h1.home_tittle,
   display: inline-flex;
   align-items: center;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .button__icon {
