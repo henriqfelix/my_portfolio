@@ -101,6 +101,20 @@ img {
   height: auto;
 }
 
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--first-color);
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--body-color);
+}
+
 /*==== VARIABLES DARK THEME ====*/
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
