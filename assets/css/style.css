@@ -384,6 +384,10 @@ h1.home_tittle,
   outline: none;
 }
 
+.button--flex:hover {
+  background: var(--first-color);
+}
+
 .button__icon {
   font-size: 1rem;
 }
