@@ -48,17 +48,13 @@ let swiper = new Swiper(".project-swiper", {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    680: {
+    510: {
       slidesPerView: 2,
       spaceBetween: 40,
     },
     950: {
       slidesPerView: 3,
-      spaceBetween: 40,
-    },
-    1100: {
-      slidesPerView: 4,
-      spaceBetween: 50,
+      spaceBetween: 80,
     },
   },
 });
