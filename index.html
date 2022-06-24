@@ -397,12 +397,13 @@
         >
 
         <div class="contact__container container grid">
-          <form action="" class="contact__form grid" id="form">
+          <form method="" class="contact__form grid" id="form">
             <div class="contact__inputs grid">
               <!-- NAME -->
               <div class="contact__content">
-                <label for="">Nome</label>
+                <label for="name">Nome</label>
                 <input
+                  name="name"
                   type="text"
                   class="contact__input"
                   id="name"
@@ -412,8 +413,9 @@
               </div>
               <!-- EMAIL -->
               <div class="contact__content">
-                <label for="">Email</label>
+                <label for="email">Email</label>
                 <input
+                  name="email"
                   type="text"
                   class="contact__input"
                   id="email"
@@ -424,8 +426,9 @@
             </div>
             <!-- SUBJECT -->
             <div class="contact__content">
-              <label for="">Assunto</label>
+              <label for="subject">Assunto</label>
               <input
+                name="subject"
                 type="subject"
                 class="contact__input"
                 id="subject"
@@ -435,9 +438,9 @@
             </div>
             <!-- MESSAGE -->
             <div class="contact__content">
-              <label for="">Mensagem</label>
+              <label for="message">Mensagem</label>
               <textarea
-                name=""
+                name="message"
                 cols="0"
                 rows="7"
                 class="contact__input"
@@ -453,7 +456,19 @@
                 <i class="uil uil-message button__icon"></i>
               </button>
             </div>
+
+            <input
+              type="hidden"
+              name="accessKey"
+              value="524ee5cd-22a0-478f-9b4b-1eb0fbd730c7"
+            />
           </form>
+
+          <div class="contact__success">
+            <i class="uil uil-multiply contact__success--icon"></i>
+            <h2 class="contact__success--title"></h2>
+            <p class="contact__success--description"></p>
+          </div>
         </div>
       </section>
     </main>
@@ -492,6 +507,9 @@
     <a href="#home" class="scrollup" id="scroll-up">
       <i class="uil uil-angle-double-up scrollup__icon"></i>
     </a>
+
+    <!-- SMTPJS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!-- FORM VALIDATOR -->
     <script src="assets/js/form-validator.js"></script>

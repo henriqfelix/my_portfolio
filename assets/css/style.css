@@ -642,7 +642,14 @@ h1.home_tittle,
 .contact__container {
   row-gap: 3rem;
   width: 80%;
-  max-width: 24rem;
+  max-width: 28rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__form {
+  width: 100%;
 }
 
 .contact__information {
@@ -686,6 +693,45 @@ h1.home_tittle,
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contact__success {
+  z-index: var(--z-modal);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  height: 12rem;
+  padding: 2rem 1.5rem;
+  position: fixed;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  background-color: var(--body-color);
+  box-shadow: 0 0px 20px 4px hsla(230, 65%, 45%, 0.5);
+  top: 40%;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.contact__success--icon {
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.2rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+.contact__success h2 {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.contact__success p {
+  font-size: var(--smaller-font-size);
+}
+
+.show__modal {
+  visibility: visible;
 }
 
 /*==== FOOTER ====*/
@@ -792,11 +838,6 @@ h1.home_tittle,
   bottom: 8rem;
 }
 
-.shake-horizontal {
-  -webkit-animation: shake-horizontal 0.8s both;
-  animation: shake-horizontal 0.8s both;
-}
-
 /*==== ANIMATIONS ====*/
 @keyframes float {
   0% {
@@ -867,6 +908,11 @@ h1.home_tittle,
   .project__description {
     font-size: var(--small-font-size);
   }
+
+  .contact__success {
+    width: 16rem;
+    box-shadow: 0 0px 10px 4px hsla(230, 65%, 45%, 0.5);
+  }
 }
 
 /*==== MEDIUM DEVICES ====*/
@@ -890,6 +936,18 @@ h1.home_tittle,
 
   .skills__content:nth-child(2) {
     margin-top: 0;
+  }
+
+  .contact__success {
+    width: 30rem;
+  }
+
+  .contact__success h2 {
+    font-size: var(--h2-font-size);
+  }
+
+  .contact__success p {
+    font-size: var(--small-font-size);
   }
 }
 
@@ -930,6 +988,10 @@ h1.home_tittle,
   .skills__container {
     width: 40rem;
     column-gap: 4rem;
+  }
+
+  .contact__success {
+    width: 38rem;
   }
 }
 
@@ -1000,5 +1062,9 @@ h1.home_tittle,
 
   .project__content {
     max-width: 500px;
+  }
+
+  .contact__success {
+    width: 40rem;
   }
 }

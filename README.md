@@ -1,3 +1,3 @@
 # my_portfolio
 
-> ## ⚠️ status: in progress
+> ## ⚠️ status: 90% finished 🔥
