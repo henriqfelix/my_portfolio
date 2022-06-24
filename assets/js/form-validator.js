@@ -22,12 +22,16 @@ function checkInput() {
 
   if (usernameValue === "") {
     setErrorFor(username, "Por favor, insira seu nome.");
+  } else if (usernameValue.length > 30) {
+    setErrorFor(username, "Insira um nome de até 30 dígitos");
   } else {
     setSuccessrFor(username);
   }
 
   if (emailValue === "") {
     setErrorFor(email, "Por favor, insira seu email.");
+  } else if (emailValue.length > 50) {
+    setErrorFor(email, "Insira um email de até 50 dígitos");
   } else if (!checkEmail(emailValue)) {
     setErrorFor(email, "Este email não é valido :/");
   } else {
@@ -36,12 +40,16 @@ function checkInput() {
 
   if (subjectValue === "") {
     setErrorFor(subject, "Insira um assunto por favor.");
+  } else if (subjectValue.length > 30) {
+    setErrorFor(subject, "Insira um assunto de até 30 dígitos");
   } else {
     setSuccessrFor(subject);
   }
 
   if (messageValue === "") {
     setErrorFor(message, "Ops! O campo de mensagem está vazio.");
+  } else if (messageValue.length > 250) {
+    setErrorFor(message, "Insira uma mensagem de até 250 dígitos");
   } else {
     setSuccessrFor(message);
   }
