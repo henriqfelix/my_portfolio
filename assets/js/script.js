@@ -28,33 +28,38 @@ skillsHeader.forEach((el) => {
 });
 
 /*==== PROJECT SWIPPER ====*/
-let swiper = new Swiper(".project-swiper", {
+let swiper = new Swiper(".swiper", {
+  effect: "coverflow",
   loop: true,
   grabCursor: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  centeredSlides: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: false,
   },
-  slidesPerView: 1,
-  spaceBetween: 10,
-  // init: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-
   breakpoints: {
-    400: {
+    250: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    510: {
+    640: {
       slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    920: {
+      slidesPerView: 3,
       spaceBetween: 40,
     },
-    950: {
-      slidesPerView: 3,
-      spaceBetween: 80,
+    1240: {
+      slidesPerView: 4,
+      spaceBetween: 50,
     },
   },
 });
