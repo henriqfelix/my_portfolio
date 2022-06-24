@@ -167,6 +167,10 @@ body.dark-theme {
   gap: 1.5rem;
 }
 
+.center__text {
+  text-align: center;
+}
+
 * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -962,6 +966,7 @@ h1.home_tittle,
 
   .section__subtitle {
     font-size: var(--normal-font-size);
+    padding: 0 4rem;
   }
 
   .home__container {
@@ -1003,6 +1008,10 @@ h1.home_tittle,
 
   .section__title {
     font-size: var(--h1-font-size);
+  }
+
+  .section__subtitle {
+    padding: 0 8rem;
   }
 
   .nav {
@@ -1058,6 +1067,10 @@ h1.home_tittle,
 @media screen and (min-width: 1040px) {
   .home__container {
     column-gap: 16rem;
+  }
+
+  .section__subtitle {
+    padding: 0 10rem;
   }
 
   .project__content {
