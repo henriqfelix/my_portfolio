@@ -606,16 +606,19 @@ h1.home_tittle,
   text-align: center;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper__button {
   position: absolute;
   top: 30% !important;
-  margin: -1.75rem;
-  background-color: var(--first-color);
   width: 2rem !important;
   height: 2rem !important;
+  background-color: var(--first-color);
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  margin: -1.75rem;
 }
 
 .swiper-button-next::after,
