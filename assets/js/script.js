@@ -132,4 +132,16 @@ themeButton.addEventListener("click", () => {
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+  changeColorScheme();
 });
+
+/*==== CHANGE COLOR SCHEME ====*/
+function changeColorScheme() {
+  const themeColor = document.querySelector('meta[name="theme-color"]');
+
+  if (themeColor.getAttribute("content") === "#fff") {
+    themeColor.setAttribute("content", "hsl(230, 30%, 8%)");
+  } else {
+    themeColor.setAttribute("content", "#fff");
+  }
+}
