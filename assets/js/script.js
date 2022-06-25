@@ -138,10 +138,22 @@ themeButton.addEventListener("click", () => {
 /*==== CHANGE COLOR SCHEME ====*/
 function changeColorScheme() {
   const themeColor = document.querySelector('meta[name="theme-color"]');
+  let currentThemeColor = "";
 
-  if (themeColor.getAttribute("content") === "#fff") {
-    themeColor.setAttribute("content", "hsl(230, 29%, 16%)");
-  } else {
-    themeColor.setAttribute("content", "#fff");
+  console.log(localStorage.getItem("currentThemeColor"));
+
+  if (localStorage.getItem("currentThemeColor") === "") {
+    currentThemeColor = "#fff";
+    localStorage.setItem("currentThemeColor", currentThemeColor);
   }
+
+  if (localStorage.getItem("currentThemeColor") === "#fff") {
+    currentThemeColor = "hsl(230, 29%, 16%)";
+    themeColor.setAttribute("content", currentThemeColor);
+  } else {
+    currentThemeColor = "#fff";
+    themeColor.setAttribute("content", currentThemeColor);
+  }
+
+  localStorage.setItem("currentThemeColor", currentThemeColor);
 }
