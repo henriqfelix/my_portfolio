@@ -140,7 +140,7 @@ function changeColorScheme() {
   const themeColor = document.querySelector('meta[name="theme-color"]');
 
   if (themeColor.getAttribute("content") === "#fff") {
-    themeColor.setAttribute("content", "hsl(230, 30%, 8%)");
+    themeColor.setAttribute("content", "hsl(230, 29%, 16%)");
   } else {
     themeColor.setAttribute("content", "#fff");
   }
