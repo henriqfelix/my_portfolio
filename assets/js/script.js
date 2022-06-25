@@ -8,6 +8,16 @@ const scrollHeader = () => {
 };
 window.addEventListener("scroll", scrollHeader);
 
+/*==== CHANGE THEME COLOR ====*/
+const themeColor = document.querySelector('meta[name="theme-color"]');
+let color = "#fff";
+
+document.querySelector("theme-button").addEventListener("click", (e) => {
+  e.preventDefault();
+
+  color === "#fff" ? (color = "hsl(230, 29%, 16%)") : (color = "#fff");
+});
+
 /*==== ACCORDION SKILLS ====*/
 const skillsContent = document.getElementsByClassName("skills__content"),
   skillsHeader = document.querySelectorAll(".skills__header");
