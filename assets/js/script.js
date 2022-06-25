@@ -141,15 +141,15 @@ function changeColorScheme() {
   let currentThemeColor = "";
 
   if (localStorage.getItem("currentThemeColor") === "") {
-    currentThemeColor = "hsl(230, 29%, 16%)";
+    currentThemeColor = "hsl(230, 28%, 12%)";
     localStorage.setItem("currentThemeColor", currentThemeColor);
   }
 
-  if (localStorage.getItem("currentThemeColor") === "hsl(230, 29%, 16%)") {
+  if (localStorage.getItem("currentThemeColor") === "hsl(230, 28%, 12%)") {
     currentThemeColor = "#fff";
     themeColor.setAttribute("content", currentThemeColor);
   } else {
-    currentThemeColor = "hsl(230, 29%, 16%)";
+    currentThemeColor = "hsl(230, 28%, 12%)";
     themeColor.setAttribute("content", currentThemeColor);
   }
 
