@@ -137,10 +137,8 @@ themeButton.addEventListener("click", () => {
 
 /*==== CHANGE COLOR SCHEME ====*/
 function changeColorScheme() {
-  const themeColor = document.querySelector('meta[name="theme-color"]');
+  const themeColor = getCurrentThemeColor();
   let currentThemeColor = "";
-
-  console.log(localStorage.getItem("currentThemeColor"));
 
   if (localStorage.getItem("currentThemeColor") === "") {
     currentThemeColor = "hsl(230, 29%, 16%)";
@@ -156,4 +154,17 @@ function changeColorScheme() {
   }
 
   localStorage.setItem("currentThemeColor", currentThemeColor);
+  console.log(localStorage.getItem("currentThemeColor"));
 }
+
+function getCurrentThemeColor() {
+  return document.querySelector('meta[name="theme-color"]');
+}
+
+window.onload = function () {
+  const themeColor = getCurrentThemeColor();
+  let currentThemeColor = localStorage.getItem("currentThemeColor");
+  if (currentThemeColor === null) currentThemeColor = "#fff";
+  themeColor.setAttribute("content", currentThemeColor);
+  console.log(themeColor);
+};
