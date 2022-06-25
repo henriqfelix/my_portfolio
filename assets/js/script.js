@@ -16,6 +16,7 @@ document.querySelector("theme-button").addEventListener("click", (e) => {
   e.preventDefault();
 
   color === "#fff" ? (color = "hsl(230, 29%, 16%)") : (color = "#fff");
+  themeColor.setAttribute("content", color);
 });
 
 /*==== ACCORDION SKILLS ====*/
