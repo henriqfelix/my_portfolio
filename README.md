@@ -100,7 +100,7 @@
 
 <h3>TECHNOLOGIES USED</h3>
 
-- [HTML](https://www.w3schools.com/html/default.asp)
+- [HTML](https://www.w3.org/html/)
 - [CSS](https://www.w3schools.com/css/default.asp)
 - [Javascript](https://www.javascript.com)
 - API's
