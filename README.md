@@ -24,20 +24,6 @@
     <a href="https://github.com/henriqfelix/my_portfolio/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/henriqfelix/my_portfolio?style=for-the-badge"/></a>
 </p>
 
-<h3 align="center">
-    TRY IT YOURSELF
-</h3>
-
-<p align="center">
-    Click on the blue button below to be redirected to the project website.
-</p>
-
-<p align="center">
-    <a href="https://henriqfelix.github.io/my_portfolio/#home">
-        <img src="https://img.shields.io/static/v1?label&message=CHECK IT OUT&color=blue&style=for-the-badge"/>
-    </a>
-</p>
-
 ---
 
 <h3 align="center">
